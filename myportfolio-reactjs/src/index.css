@@ -12,7 +12,7 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --color-bg:#1f1f38;
+    --color-bg:#000039;
     --color-white:#fff;
     --transition:0.4s ease;
 }
@@ -20,10 +20,25 @@ body{
     background-color: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+
+.myContact{
+    color: var(--color-white);
+    border: 1px solid rgb(1, 1, 131);
+    padding:.5rem 1.5rem;
+    border-radius: 5px;
+    margin: 12px auto;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px auto;
+    width: fit-content;
+    transition: var(--transition);
+    transform: translateY(0);
+}
+.myContact:hover{
+    color: rgb(255, 200, 0);
+    transform: translateY(-15px);
+    border:1px solid rgb(255, 200, 0);
 }
 
 .dp-image{
@@ -31,4 +46,17 @@ body{
     margin: auto;
     height: 500px;
     object-fit: cover;
+}
+.mydp{
+    height: 460px;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 300px 300px 0 0;
+    transition: var(--transition);
+    transform: translateY(0);
+}
+.mydp:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.5), 0 0 60px rgba(0, 0, 0, 0.5);
+
 }
