@@ -16,7 +16,7 @@ const Header = () => {
               {/* CV */}
               <CV/>
             </div>
-            <div className="col-md-4 mx-auto">
+            <div className="col-md-4 mx-auto text-center pb-5">
                <img className="img-fluid mydp w-100" src={image} alt="profile" />
             </div>
          </div>
